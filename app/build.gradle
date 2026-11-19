@@ -1,4 +1,4 @@
 plugins { id 'com.android.application' }
 android { namespace 'com.naturopharma.stock'; compileSdk 35
- defaultConfig { applicationId 'com.naturopharma.stock'; minSdk 23; targetSdk 28; versionCode 1; versionName '1.0' }
+ defaultConfig { applicationId 'com.naturopharma.stock'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0' }
 }
