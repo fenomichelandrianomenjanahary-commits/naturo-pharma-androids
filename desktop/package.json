@@ -1,0 +1,45 @@
+{
+  "name": "naturopharma-windows",
+  "version": "1.0.0",
+  "description": "NaturoPharma - gestion de stock et ventes",
+  "main": "main.js",
+  "author": "NaturoPharma",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "35.2.1",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.naturopharma.desktop",
+    "productName": "NaturoPharma",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "NaturoPharma"
+    }
+  }
+}
